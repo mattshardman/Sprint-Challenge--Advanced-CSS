@@ -318,3 +318,26 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.sign-in .sign-in-form {
+  display: flex;
+  justify-content: dfspace-around;
+  align-items: center;
+  flex-direction: column;
+}
+.sign-in .sign-in-form .btn {
+  height: 40px;
+  width: 100%;
+  font-size: 1.8rem;
+  color: #fff;
+  background: #22283A;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.sign-in .sign-in-form .btn:hover {
+  color: #22283A;
+  background: #fff;
+  cursor: pointer;
+}
