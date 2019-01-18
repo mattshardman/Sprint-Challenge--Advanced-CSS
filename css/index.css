@@ -161,6 +161,7 @@ p {
   margin: 0 auto;
 }
 .header {
+  z-index: 10;
   position: fixed;
   opacity: 0.9;
   width: 100%;
@@ -325,6 +326,7 @@ footer {
 }
 .sign-in {
   height: 100vh;
+  perspective: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -337,10 +339,27 @@ footer {
   width: 500px;
   height: 450px;
   max-width: 95%;
+  animation-name: rotate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forward;
+  animation-duration: 1s;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+}
+@keyframes rotate {
+  from {
+    transform: rotate3d(1, 0, 0, 45deg);
+  }
+  to {
+    transform: rotate3d(1, 0, 0, 0deg);
+  }
+}
+@media (max-width: 500px) {
+  .sign-in .sign-in-form {
+    padding: 40px 20px;
+  }
 }
 .sign-in .sign-in-form div {
   width: 100%;
@@ -366,7 +385,7 @@ footer {
 .sign-in .sign-in-form input:active {
   background: #F6F7F8;
   outline: none;
-  border: 1px solid #22283A;
+  border: 1px solid black;
 }
 .sign-in .sign-in-form .btn {
   height: 40px;

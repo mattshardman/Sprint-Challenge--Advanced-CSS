@@ -1,5 +1,6 @@
 .sign-in {
   height: 100vh;
+  perspective: 800px;
   .flex();
   .sign-in-form {
     border: 1px solid @river-bend;
@@ -8,7 +9,21 @@
     width: 500px;
     height: 450px;
     max-width: 95%;
+    animation-name: rotate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forward;
+    animation-duration: 1s;
+
+    @keyframes rotate {
+        from { transform: rotate3d(1,0,0, 45deg); }
+        to { transform: rotate3d(1,0,0, 0deg); }
+    }
+    
     .flex(space-around, center, column);
+
+    @media @phone {
+        padding: 40px 20px;
+    }
 
     div {
         width: 100%;
@@ -30,7 +45,7 @@
       &:hover, &:focus, &:active {
           background: @porcelain;
           outline: none;
-          border: 1px solid @btn-bg-color;
+          border: 1px solid black;
       }
     }
     .btn {
