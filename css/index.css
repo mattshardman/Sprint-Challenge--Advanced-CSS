@@ -211,6 +211,9 @@ p {
   height: auto;
   border-radius: 10px;
 }
+.header {
+  width: 100%;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
