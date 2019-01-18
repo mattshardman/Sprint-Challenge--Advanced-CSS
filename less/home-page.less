@@ -6,15 +6,13 @@
   }
 
   .intro {
-
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
   .space-images {
@@ -76,7 +74,9 @@
       .btn {
         .button(30px; 100px);
         .flex();
-       
+        @media @phone {
+          .button(60px; 100%);
+        }
       }
     }
 
@@ -88,7 +88,7 @@
         margin-left: 0;
         width: 100%;
       }
-      
+
       img {
         width: 100%;
         height: auto;
@@ -96,4 +96,4 @@
       }
     }
   }
-}// home
+} // home

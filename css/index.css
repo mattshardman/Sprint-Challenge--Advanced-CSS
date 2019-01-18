@@ -275,6 +275,25 @@ footer {
   background: #fff;
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    height: 60px;
+    width: 100%;
+    font-size: 1.8rem;
+    color: #fff;
+    background: #22283A;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .home .walk .walk-text .btn:hover {
+    color: #22283A;
+    background: #fff;
+    cursor: pointer;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
