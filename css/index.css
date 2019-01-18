@@ -339,6 +339,7 @@ footer {
   width: 500px;
   height: 450px;
   max-width: 95%;
+  text-align: center;
   animation-name: rotate;
   animation-iteration-count: 1;
   animation-fill-mode: forward;
@@ -371,6 +372,7 @@ footer {
 }
 .sign-in .sign-in-form label {
   width: 100%;
+  text-align: left;
   font-size: 1.75rem;
 }
 .sign-in .sign-in-form input {
