@@ -34,13 +34,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+* Adaptive websites change there appearance at specific breakpoints (screen widths), but generally the elements fixed widths defined in pixels. Fully responsive websites respond to screen changes by using variable widths for elements (percentages), and also change the appearance at specific breakpoints - allowing the website to look great on all devices.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+* Mobile first refers to initially styling a website for a mobile screen and then using min-width media queries to add content for wider screens. As opposed to: initially styling a website for a desktop screen and then removing content for smaller devices using max-width queries.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+* 62.5% is the `magic` number that means rem units can be directly translated in to pixel sizes, by multiplying by 10 e.g. 1.6 rem is equal to 16px.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+* Preprocessing takes a file written in using a different syntax (in this case LESS) and compiles it into another syntax (in this case CSS). This is useful as it enables the use of languages such as LESS and SASS which have more features (such as mixins, and functions) than plain css. 
+
+* Syntax(LESS) -> Compiler(JavaScript) -> Output(CSS)
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+* Mixins are extremely useful for keeping code DRY and improving code reusability.
+* Separating arguments to parametric mixins by semicolons (rather than commas) seems counter intuitive. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
