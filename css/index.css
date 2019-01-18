@@ -161,6 +161,7 @@ p {
   margin: 0 auto;
 }
 .header {
+  position: fixed;
   width: 100%;
   height: 80px;
   background: #F6F6F6;
@@ -195,6 +196,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  padding-top: 80px;
 }
 .home .header-image {
   border-radius: 5px;
@@ -318,11 +322,47 @@ footer {
   height: auto;
   border-radius: 10px;
 }
-.sign-in .sign-in-form {
+.sign-in {
+  height: 100vh;
   display: flex;
-  justify-content: dfspace-around;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.sign-in .sign-in-form {
+  border: 1px solid #454A59;
+  border-radius: 5px;
+  padding: 40px 60px;
+  width: 500px;
+  height: 450px;
+  max-width: 95%;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
+}
+.sign-in .sign-in-form div {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  flex-direction: column;
+}
+.sign-in .sign-in-form label {
+  width: 100%;
+  font-size: 1.75rem;
+}
+.sign-in .sign-in-form input {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #454A59;
+  padding: 0 10px;
+}
+.sign-in .sign-in-form input:hover {
+  background: #F6F7F8;
+  outline: none;
 }
 .sign-in .sign-in-form .btn {
   height: 40px;

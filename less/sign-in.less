@@ -1,8 +1,39 @@
 .sign-in {
-    .sign-in-form {
-        .flex(dfspace-around, center, column);
-        .btn {
-            .button(40px; 100%);
-        }
+  height: 100vh;
+  .flex();
+  .sign-in-form {
+    border: 1px solid @river-bend;
+    border-radius: 5px;
+    padding: 40px 60px;
+    width: 500px;
+    height: 450px;
+    max-width: 95%;
+    .flex(space-around, center, column);
+
+    div {
+        width: 100%;
+        height: 70px;
+        .flex(space-between, space-between, column);
     }
+
+    label {
+      width: 100%;
+      font-size: @medium;
+    }
+
+    input {
+      width: 100%;
+      height: 40px;
+      border-radius: 5px;
+      border: 1px solid @river-bend;
+      padding: 0 10px;
+      &:hover {
+          background: @porcelain;
+          outline: none;
+      }
+    }
+    .btn {
+      .button(40px; 100%);
+    }
+  }
 }
