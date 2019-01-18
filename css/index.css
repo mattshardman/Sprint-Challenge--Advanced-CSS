@@ -205,6 +205,18 @@ p {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  height: 30px;
+  width: 100px;
+  font-size: 1.8rem;
+  color: #fff;
+  background: #22283A;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -231,8 +243,8 @@ p {
   width: 320px;
   display: flex;
   justify-content: space-between;
-  align-items: 'center';
-  flex-direction: 'row';
+  align-items: center;
+  flex-direction: row;
 }
 .header nav a {
   font-size: 1.2rem;
