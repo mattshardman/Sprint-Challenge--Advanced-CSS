@@ -9,26 +9,27 @@
     width: 500px;
     height: 450px;
     max-width: 95%;
-    animation-name: rotate;
-    animation-iteration-count: 1;
-    animation-fill-mode: forward;
-    animation-duration: 1s;
+    .animation(rotate; 1; forward; 1s);
 
     @keyframes rotate {
-        from { transform: rotate3d(1,0,0, 45deg); }
-        to { transform: rotate3d(1,0,0, 0deg); }
+      from {
+        transform: rotate3d(1, 0, 0, 45deg);
+      }
+      to {
+        transform: rotate3d(1, 0, 0, 0deg);
+      }
     }
-    
+
     .flex(space-around, center, column);
 
     @media @phone {
-        padding: 40px 20px;
+      padding: 40px 20px;
     }
 
     div {
-        width: 100%;
-        height: 70px;
-        .flex(space-between, space-between, column);
+      width: 100%;
+      height: 70px;
+      .flex(space-between, space-between, column);
     }
 
     label {
@@ -42,10 +43,12 @@
       border-radius: 5px;
       border: 1px solid @river-bend;
       padding: 0 10px;
-      &:hover, &:focus, &:active {
-          background: @porcelain;
-          outline: none;
-          border: 1px solid black;
+      &:hover,
+      &:focus,
+      &:active {
+        background: @porcelain;
+        outline: none;
+        border: 1px solid black;
       }
     }
     .btn {
