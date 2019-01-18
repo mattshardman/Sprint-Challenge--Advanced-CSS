@@ -1,1 +1,29 @@
 // Mixins Here
+.flex(@justify: center; @align: center; @direction: row) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    flex-direction: @direction;
+}
+
+.button (@height; @width) {
+    height: @height;
+    width: @width;
+    font-size: 1.8rem;
+    color: #fff;
+    background: @btn-bg-color;
+    border-radius: 5px;
+    .flex();
+    &:hover {
+        color: @btn-bg-color;
+        background: #fff;
+        cursor: pointer;
+    }
+}
+
+.animation (@name; @count; @fill; @duration) {
+    animation-name: @name;
+    animation-iteration-count: @count;
+    animation-fill-mode: @fill;
+    animation-duration: @duration;
+}

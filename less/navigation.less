@@ -1,1 +1,27 @@
 // Navigation code here
+.header {
+    z-index: 10;
+    position: fixed;
+    opacity: 0.9;
+    width: 100%;
+    height: 80px;
+    background: @nav-bg;
+    .flex(space-evenly; center; column);
+
+    h1 {
+        font-size: @nav-head-size;
+        color: @header-font-color;
+    }
+
+    nav {
+        width: 320px;
+        .flex(space-between);
+
+        a {
+            font-size: @nav-menu-size;
+            font-weight: 800;
+            text-decoration: none;
+            color: @header-font-color;
+        }
+    }
+}
