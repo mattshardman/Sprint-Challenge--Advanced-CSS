@@ -1,0 +1,47 @@
+.about {
+  padding: 100px 0;
+  margin: 0 auto;
+  max-width: 95%;
+  width: 800px;
+
+  .main-content {
+    width: 100%;
+    height: 540px;
+    .flex(space-evenly, center, column);
+  }
+
+  .sub-content {
+    .flex(space-between, center);
+    @media @phone {
+      .flex(center, center, column);
+    }
+  }
+
+  .tile {
+    background: fff;
+    box-shadow: 0 3px 30px rgba(0, 0, 0, 0.2);
+    transition: 500ms all;
+
+    .video {
+        height: 75%;
+        background: black;
+    }
+
+    &.large {
+      height: 400px;
+      width: 100%;
+    }
+
+    &.small {
+      height: 200px;
+      width: 30%;
+      @media @phone {
+        width: 100%;
+      }
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
