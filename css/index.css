@@ -443,12 +443,18 @@ footer {
   height: 75%;
   background: black;
 }
+.about .tile .video.large {
+  height: 85%;
+}
 .about .tile .content {
   height: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+}
+.about .tile .content.large {
+  height: 15%;
 }
 .about .tile .content h2 {
   font-size: 1.75rem;
